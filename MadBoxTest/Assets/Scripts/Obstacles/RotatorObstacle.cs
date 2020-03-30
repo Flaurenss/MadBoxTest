@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class RotatorObstacle : GenericObstacle
 {
-    [SerializeField] private float rotatorSpeed;
     [SerializeField] private Vector3 rotation;
     public override void ObstacleBehaviour()
     {

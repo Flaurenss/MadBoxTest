@@ -72,7 +72,6 @@ public class PlayerMovement : MonoBehaviour
                 + 3 * (1-tValue) * Mathf.Pow(tValue,2) * p2
                 + Mathf.Pow(tValue,3) * p3;
 
-                FaceDirection(newPosition);
                 transform.position = newPosition;
             }
             yield return waitForEndOfFrame;
@@ -87,17 +86,7 @@ public class PlayerMovement : MonoBehaviour
             //TODO end game
         }
     }
-    /// <summary>
-    /// Rotates the player to the direction that is going
-    /// </summary>
-    void FaceDirection(Vector3 newPos)
-    {
-        var faceDirection = newPos - transform.position;
-        if(faceDirection != Vector3.zero)
-        {
-            transform.rotation = Quaternion.LookRotation(faceDirection);
-        }
-    }
+
 
     void SaveOriginPos()
     {
