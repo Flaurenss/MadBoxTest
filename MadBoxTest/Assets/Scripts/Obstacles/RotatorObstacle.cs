@@ -5,9 +5,12 @@ using UnityEngine;
 public class RotatorObstacle : GenericObstacle
 {
     [SerializeField] private float rotatorSpeed;
+    [SerializeField] private Vector3 rotation;
     public override void ObstacleBehaviour()
     {
-        var rotation = rotatorSpeed * Time.deltaTime;
-        transform.Rotate(rotation, 0, 0);
+        // var rot = rotatorSpeed * Time.deltaTime;
+        transform.Rotate(rotation.x * Time.deltaTime, 
+        rotation.y * Time.deltaTime
+        , rotation.z * Time.deltaTime);
     }
 }

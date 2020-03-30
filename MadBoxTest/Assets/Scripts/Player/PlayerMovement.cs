@@ -124,6 +124,7 @@ public class PlayerMovement : MonoBehaviour
     {
         transform.position = originPos;
         transform.rotation = originRotation;
+        playerRigidbody.velocity = Vector3.zero;
         playerBody.localPosition = new Vector3(0,1,0);
         playerBody.localRotation = Quaternion.identity;
 

@@ -8,7 +8,7 @@ public class PendulumObstacle : GenericObstacle
     [SerializeField] float pandulumSpeed;
     public override void ObstacleBehaviour()
     {
-        float angle = maxAngle * Mathf.Sin( Time.deltaTime * pandulumSpeed);
+        float angle = maxAngle * Mathf.Sin( Time.time * pandulumSpeed);
         transform.rotation = Quaternion.Euler( 0, 0, angle);
     }
 }
