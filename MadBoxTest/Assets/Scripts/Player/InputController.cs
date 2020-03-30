@@ -1,0 +1,24 @@
+﻿using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class InputController : MonoBehaviour
+{
+    private PlayerMovement movController;
+    private void Awake() 
+    {
+        movController = GetComponent<PlayerMovement>();
+    }
+
+    void Update()
+    {
+        if(Input.GetMouseButton(0))
+        {
+            movController.Move(true);
+        }
+        else
+        {
+            movController.Move(false);
+        }
+    }
+}
