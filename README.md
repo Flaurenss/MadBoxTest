@@ -15,7 +15,7 @@ In terms of code, I think that the GenericObstacle class could be improved in or
 I think that one of the coolest features from these kind of games is the ragdoll implementation. I would also add more kinds of obstacles, UI in order to show the path progress and probably some sort of AI in order to make the player compete against it. 
 
 ## What did you think
-I think that these kind of test are very beneficial to me in terms of programming. The time limitation makes trying to solve everything in the simplest and efficient way possible and I think that that make me improve as a coder.
+I think that these kind of test are very beneficial to me in terms of programming. The time limitation makes trying to solve everything in the simplest and efficient way possible and I think that that make me improve as a programmer.
 
 ## Any comment you may have
 I hope you enjoy the result. Thank you for the opportunity.
