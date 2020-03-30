@@ -5,8 +5,28 @@ using UnityEngine;
 //In charge of rotate camera when enter on triggers from camera change rotaion 
 public class CameraContainer : MonoBehaviour
 {
-    void Rotate()
-    {
+    Quaternion newRot;
 
+    float speedMovement = 2;
+    private void OnDisable()
+    {
+       CollisionDetector.OnTrigger -= ChangeTransform; 
+    }
+   private void Awake()
+   {
+       CollisionDetector.OnTrigger += ChangeTransform;
+   }
+    private void Start()
+    {
+        newRot = transform.rotation;
+    }
+    private void Update()
+    {
+        transform.rotation = Quaternion.Lerp(transform.rotation,newRot,Time.deltaTime * speedMovement);
+    }
+
+    void ChangeTransform(Transform rot)
+    {
+        newRot = rot.rotation;
     }
 }
