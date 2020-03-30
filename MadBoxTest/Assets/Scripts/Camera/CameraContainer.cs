@@ -20,6 +20,9 @@ public class CameraContainer : MonoBehaviour
     {
         newRot = transform.rotation;
     }
+    /// <summary>
+    /// Updates the camera rotation depending on the newRot value
+    /// </summary>
     private void Update()
     {
         transform.rotation = Quaternion.Lerp(transform.rotation,newRot,Time.deltaTime * speedMovement);

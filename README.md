@@ -9,12 +9,13 @@ In the other hand I had some issues at the begginign in order to decide how to i
 
 ## The parts you think you could do better and how
 There are a few parts that I think that can be improved. As I said before the camera only transitions in the rotation field. I would implement a position transition for the camera.
+I also think that the path system 
 
 ## What you would do if you could go a step further on this game
-I think that one of the cool features from that kind of games is the ragdoll implementation. I would also add more kinds of obstacles and probaliy some sort of AI in order to make the player compete against it. 
+I think that one of the coolest features from these kind of games is the ragdoll implementation. I would also add more kinds of obstacles and probably some sort of AI in order to make the player compete against it. 
 
 ## What did you think
-I think that these kind of test are very beneficial to me in terms of programming. The time limitation makes trying to solve everything in the simplest and efficient way possible and I think that that make me imporve as a coder.
+I think that these kind of test are very beneficial to me in terms of programming. The time limitation makes trying to solve everything in the simplest and efficient way possible and I think that that make me improve as a coder.
 
 ## Any comment you may have
 I hope you enjoy the result. Thank you for the opportunity.

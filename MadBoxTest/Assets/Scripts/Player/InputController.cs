@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// In charge of getting all the user inputs related to player movement
+/// </summary>
 public class InputController : MonoBehaviour
 {
     private PlayerMovement movController;

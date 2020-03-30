@@ -52,7 +52,11 @@ public class PlayerMovement : MonoBehaviour
             playerMoving = false;
         }
     }
-
+    /// <summary>
+    /// Progress through the set path only when the user is moving the player
+    /// </summary>
+    /// <param name="path"></param>
+    /// <returns></returns>
     IEnumerator ProgressPath(int path)
     {
         movementAllowed = false;
@@ -87,7 +91,10 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-
+    /// <summary>
+    /// Save origin position and rotation in order to maintain standard transform when spawning
+    /// on start of path
+    /// </summary>
     void SaveOriginPos()
     {
         originPos = transform.position;
